@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\proiectOOP\Magazin\Magazin\</FILEPATH>
+      <FILENAME>Produs.h</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class Produs', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>Produs::{ctor}</FUNCTION>
+    <DECORATED>??0Produs@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\proiectOOP\Magazin\Magazin\</FILEPATH>
+      <FILENAME>V3.h</FILENAME>
+      <LINE>103</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class VectorDinamic&lt;class Produs&gt;', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>VectorDinamic&lt;Produs&gt;::{dtor}</FUNCTION>
+    <DECORATED>??1?$VectorDinamic@VProdus@@@@QEAA@XZ</DECORATED>
+    <FUNCLINE>103</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\proiectOOP\Magazin\Magazin\</FILEPATH>
+      <FILENAME>V3.h</FILENAME>
+      <LINE>117</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>VectorDinamic&lt;Produs&gt;::get</FUNCTION>
+    <DECORATED>?get@?$VectorDinamic@VProdus@@@@QEAAAEAVProdus@@H@Z</DECORATED>
+    <FUNCLINE>116</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\proiectOOP\Magazin\Magazin\</FILEPATH>
+      <FILENAME>V3.h</FILENAME>
+      <LINE>116</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'VectorDinamic&lt;Produs&gt;::get' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>VectorDinamic&lt;Produs&gt;::get</FUNCTION>
+    <DECORATED>?get@?$VectorDinamic@VProdus@@@@QEAAAEAVProdus@@H@Z</DECORATED>
+    <FUNCLINE>116</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\proiectOOP\Magazin\Magazin\</FILEPATH>
+      <FILENAME>V3.h</FILENAME>
+      <LINE>126</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'VectorDinamic&lt;Produs&gt;::size' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>VectorDinamic&lt;Produs&gt;::size</FUNCTION>
+    <DECORATED>?size@?$VectorDinamic@VProdus@@@@QEAAHXZ</DECORATED>
+    <FUNCLINE>126</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

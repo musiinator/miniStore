@@ -1,0 +1,230 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class Produs', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/Produs.h"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 2,
+                  "endLine": 17,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Produs::{ctor}",
+                  "decoratedName": "??0Produs@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class VectorDinamic<class Produs>', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 20,
+                  "endLine": 103,
+                  "endColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::{dtor}",
+                  "decoratedName": "??1?$VectorDinamic@VProdus@@@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 2,
+                  "endLine": 117,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::get",
+                  "decoratedName": "?get@?$VectorDinamic@VProdus@@@@QEAAAEAVProdus@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'VectorDinamic<Produs>::get' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 22,
+                  "endLine": 116,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::get",
+                  "decoratedName": "?get@?$VectorDinamic@VProdus@@@@QEAAAEAVProdus@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'VectorDinamic<Produs>::size' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 23,
+                  "endLine": 126,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::size",
+                  "decoratedName": "?size@?$VectorDinamic@VProdus@@@@QEAAHXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.32.31328.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/proiectOOP/Magazin/Magazin/Produs.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "63256840ebb3316acdeaee08f77fb6a85b4bcfb77e70b361368b68d60c9bfc32"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "515a24d1dc22ab73f54920421cfea443173bd79932b3ae4f16e86981f9fa6020"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/proiectoop/magazin/magazin/ui.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "493cb404456ab60fc765fc0b848af0a9db18818692bf73076dc6eed12802d611"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/proiectoop/magazin/magazin/ui.h"
+          },
+          "hashes": {
+            "sha-256": "51409d22bdb4b4053d31a45d57d0d61569bd1bbe1a544b5fbb6cba9293c63df6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/proiectoop/magazin/magazin/service.h"
+          },
+          "hashes": {
+            "sha-256": "4d0d5072604193c7e277b059234eaef81db06e2b0ef3556c1bfce573d2f07efe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/proiectoop/magazin/magazin/repository.h"
+          },
+          "hashes": {
+            "sha-256": "e3a8ad053a890648b5f853627c9c04c7217278223abb4c5365d8c2c9eea0f705"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/proiectoop/magazin/magazin/validators.h"
+          },
+          "hashes": {
+            "sha-256": "6bd1852403a51edfe76e791c2c10b23ddcfa239d865f044da1bedca38cfb16db"
+          }
+        }
+      ]
+    }
+  ]
+}

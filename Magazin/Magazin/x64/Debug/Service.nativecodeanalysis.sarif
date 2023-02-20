@@ -1,0 +1,683 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class Produs', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/Produs.h"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 2,
+                  "endLine": 17,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Produs::{ctor}",
+                  "decoratedName": "??0Produs@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function '`Magazin::filtrarePret'::`2'::<lambda_1>::operator()' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/Service.cpp"
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 37,
+                  "endLine": 56,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Magazin::filtrarePret::<lambda_1>::()",
+                  "decoratedName": "??R<lambda_1>@?1??filtrarePret@Magazin@@QEAA?AV?$VectorDinamic@VProdus@@@@NN@Z@QEBA@AEBVProdus@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26429",
+          "message": {
+            "text": "Symbol 'maiMicF' is never tested for nullness, it can be marked as not_null (f.23)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/Service.cpp"
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 32,
+                  "endLine": 62,
+                  "endColumn": 32
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Magazin::generalSort",
+                  "decoratedName": "?generalSort@Magazin@@AEAA?AV?$VectorDinamic@VProdus@@@@P6A_NAEBVProdus@@0@Z@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/Repository.h"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 2,
+                  "endLine": 23,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ProduseRepo::{ctor}",
+                  "decoratedName": "??0ProduseRepo@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'this->elementele'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 3,
+                  "endLine": 65,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::{ctor}",
+                  "decoratedName": "??0?$VectorDinamic@VProdus@@@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                          },
+                          "region": {
+                            "startLine": 62,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                          },
+                          "region": {
+                            "startLine": 64,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                          },
+                          "region": {
+                            "startLine": 64,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'i<ot.length')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                          },
+                          "region": {
+                            "startLine": 65,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                          },
+                          "region": {
+                            "startLine": 64,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "'i' may equal 1"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                          },
+                          "region": {
+                            "startLine": 64,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Continue this loop, (assume 'i<ot.length')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                          },
+                          "region": {
+                            "startLine": 65,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "'i' is an Output from 'Produs::=' (declared at d:\\proiectoop\\magazin\\magazin\\produs.h:36)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                          },
+                          "region": {
+                            "startLine": 65,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from 'this->elementele[1]', (readable range is 0 to 0)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::{ctor}",
+                  "decoratedName": "??0?$VectorDinamic@VProdus@@@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class VectorDinamic<class Produs>', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 19,
+                  "endLine": 60,
+                  "endColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::{ctor}",
+                  "decoratedName": "??0?$VectorDinamic@VProdus@@@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::{ctor}",
+                  "decoratedName": "??0?$VectorDinamic@VProdus@@@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 19,
+                  "endLine": 53,
+                  "endColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::{ctor}",
+                  "decoratedName": "??0?$VectorDinamic@VProdus@@@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 2,
+                  "endLine": 117,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::get",
+                  "decoratedName": "?get@?$VectorDinamic@VProdus@@@@QEAAAEAVProdus@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'VectorDinamic<Produs>::get' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 22,
+                  "endLine": 116,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::get",
+                  "decoratedName": "?get@?$VectorDinamic@VProdus@@@@QEAAAEAVProdus@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'VectorDinamic<Produs>::size' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 23,
+                  "endLine": 126,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::size",
+                  "decoratedName": "?size@?$VectorDinamic@VProdus@@@@QEAAHXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Produs::pret' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/Produs.h"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 2,
+                  "endLine": 14,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Produs::{ctor}",
+                  "decoratedName": "??0Produs@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Produs::pret"
+          }
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'newCapacity' does not change after construction, mark it as const (con.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 6,
+                  "endLine": 91,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::redim",
+                  "decoratedName": "?redim@?$VectorDinamic@VProdus@@@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::redim",
+                  "decoratedName": "?redim@?$VectorDinamic@VProdus@@@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 16,
+                  "endLine": 92,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "VectorDinamic<Produs>::redim",
+                  "decoratedName": "?redim@?$VectorDinamic@VProdus@@@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.32.31328.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/proiectOOP/Magazin/Magazin/Produs.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "63256840ebb3316acdeaee08f77fb6a85b4bcfb77e70b361368b68d60c9bfc32"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/proiectOOP/Magazin/Magazin/Service.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "b17d41bda04912a79d9218a53c75508f089beb661d2aa54b0fed494ce7354b1d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/proiectOOP/Magazin/Magazin/Repository.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "e3a8ad053a890648b5f853627c9c04c7217278223abb4c5365d8c2c9eea0f705"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/proiectOOP/Magazin/Magazin/V3.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "515a24d1dc22ab73f54920421cfea443173bd79932b3ae4f16e86981f9fa6020"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/proiectoop/magazin/magazin/service.h"
+          },
+          "hashes": {
+            "sha-256": "4d0d5072604193c7e277b059234eaef81db06e2b0ef3556c1bfce573d2f07efe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/proiectoop/magazin/magazin/validators.h"
+          },
+          "hashes": {
+            "sha-256": "6bd1852403a51edfe76e791c2c10b23ddcfa239d865f044da1bedca38cfb16db"
+          }
+        }
+      ]
+    }
+  ]
+}
